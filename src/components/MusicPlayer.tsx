@@ -45,9 +45,6 @@ export default function MusicPlayer() {
           // 播放图标 + 音符
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <path d="M6 4.5v9l8-4.5-8-4.5z" fill="white"/>
-            {!hasAudio && (
-              <circle cx="14" cy="4" r="3" fill="#FF9DB5" stroke="white" strokeWidth="1"/>
-            )}
           </svg>
         )}
 
