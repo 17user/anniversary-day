@@ -11,36 +11,52 @@ export const config = {
   loveQuote: '遇见你，是我这辈子最幸运的事',
 
   // 时间节点（重要的日子）
+  // photos: 每个节点可以放多张照片，src 写 /images/文件名.jpg，caption 是照片说明
+  // 如果暂时没有照片，photos 留空数组 [] 即可，点击后只显示文字
   timeline: [
     {
       date: '2024-06-15',
       title: '初次相遇',
       desc: '那天阳光很好，我看见了你，然后就再也忘不掉了。',
       emoji: '🌸',
+      photos: [
+        { src: '', caption: '我们第一次见面的地方' },
+        { src: '', caption: '那天的你' },
+      ],
     },
     {
       date: '2024-07-20',
       title: '第一次约会',
       desc: '我们一起吃了很久的饭，聊了很多，我知道我喜欢上你了。',
       emoji: '☕',
+      photos: [
+        { src: '', caption: '第一次约会' },
+      ],
     },
     {
       date: '2024-08-14',
       title: '在一起',
       desc: '鼓起勇气说出那句话，你说好。那一刻，我是世界上最幸福的人。',
       emoji: '💕',
+      photos: [
+        { src: '', caption: '在一起的第一天' },
+      ],
     },
     {
       date: '2025-06-15',
       title: '一周年纪念',
       desc: '一年了，感谢你一直在。愿意再陪我走很多年吗？',
       emoji: '🎂',
+      photos: [
+        { src: '', caption: '一周年纪念日' },
+      ],
     },
     {
       date: '2026-06-15',
       title: '两周年纪念',
       desc: '两年，730天，每一天都因为有你而变得不一样。',
       emoji: '🌹',
+      photos: [],
     },
   ],
 

@@ -113,3 +113,9 @@
 .section-divider::after {
   background: linear-gradient(90deg, #E8A4A4, transparent);
 }
+
+/* 照片轮播进度条动画 */
+@keyframes progressBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}

@@ -8,6 +8,7 @@ export default function MusicPlayer() {
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
+    audio.volume = 0.4  // 背景音乐音量，0.0~1.0，0.4 适合作为背景
     // 检查音乐文件是否存在
     fetch('/music/bgm.mp3', { method: 'HEAD' })
       .then(r => { if (r.ok) setHasAudio(true) })
