@@ -20,26 +20,26 @@ export const config = {
       desc: '那天阳光很好，我看见了你，然后就再也忘不掉了。',
       emoji: '🌸',
       photos: [
-        { src: '', caption: '我们第一次见面的地方' },
-        { src: '', caption: '那天的你' },
+        { src: '/images/photo2.jpg', caption: '我们第一次见面的地方' },
+        { src: '/images/photo1.jpg', caption: '那天的你' },
       ],
     },
     {
-      date: '2024-07-20',
-      title: '第一次约会',
-      desc: '我们一起吃了很久的饭，聊了很多，我知道我喜欢上你了。',
+      date: '2024-07-26',
+      title: '第一次去台州',
+      desc: '我们一起吃了很久的饭，走了好多的路。',
       emoji: '☕',
       photos: [
-        { src: '', caption: '第一次约会' },
+        { src: '/images/photo3.jpg', caption: '在台州' },
       ],
     },
     {
       date: '2024-08-14',
-      title: '在一起',
-      desc: '鼓起勇气说出那句话，你说好。那一刻，我是世界上最幸福的人。',
+      title: '第一次去上海',
+      desc: '我们拍了很多和合照，那一刻，我是世界上最幸福的人。',
       emoji: '💕',
       photos: [
-        { src: '', caption: '在一起的第一天' },
+        { src: '/images/photo5.jpg', caption: '在一起的第一天' },
       ],
     },
     {
@@ -48,7 +48,7 @@ export const config = {
       desc: '一年了，感谢你一直在。愿意再陪我走很多年吗？',
       emoji: '🎂',
       photos: [
-        { src: '', caption: '一周年纪念日' },
+        { src: '/images/photo4.jpg', caption: '一周年纪念日' },
       ],
     },
     {
@@ -60,49 +60,15 @@ export const config = {
     },
   ],
 
-  // 一起去过的地方
-  places: [
-    {
-      name: '某家咖啡馆',
-      story: '我们第一次约会的地方，点了两杯拿铁，聊了三个小时。',
-      emoji: '☕',
-      color: '#FFF0F3',
-    },
-    {
-      name: '海边',
-      story: '傍晚的海风吹乱了你的头发，你笑着转过来问我在看什么。',
-      emoji: '🌊',
-      color: '#F0F7FF',
-    },
-    {
-      name: '某个小公园',
-      story: '下过雨的傍晚，我们踩着落叶慢慢走，什么都没说，却什么都有。',
-      emoji: '🍂',
-      color: '#FFF8F0',
-    },
-    {
-      name: '你最喜欢的餐厅',
-      story: '每次你开心的时候都想去那里，所以那里也成了我最爱的地方。',
-      emoji: '🍜',
-      color: '#F5F0FF',
-    },
-    {
-      name: '我们的城市',
-      story: '同一座城市，同一片天空，有你的地方都是家。',
-      emoji: '🏙️',
-      color: '#F0FFF4',
-    },
-  ],
-
   // 日常点滴照片（src 换成你的照片路径，caption 是照片描述）
   // 把照片放到 public/images/ 目录下，src 写 /images/你的文件名.jpg
   photos: [
-    { src: '', caption: '这张照片等你来填', emoji: '📷' },
-    { src: '', caption: '我们的合照', emoji: '💑' },
-    { src: '', caption: '你最美的样子', emoji: '✨' },
-    { src: '', caption: '一起吃饭', emoji: '🍽️' },
-    { src: '', caption: '某个下午', emoji: '🌤️' },
-    { src: '', caption: '我最喜欢的一张', emoji: '💖' },
+    { src: '/images/photo6.jpg', caption: '台州臭美照', emoji: '📷' },
+    { src: '/images/photo7.jpg', caption: '大猫和可爱猫', emoji: '💑' },
+    { src: '/images/photo8.jpg', caption: '你最美的样子', emoji: '✨' },
+    { src: '/images/photo9.jpg', caption: '一起陶艺', emoji: '🍽️' },
+    { src: '/images/photo10.jpg', caption: '海边下午', emoji: '🌤️' },
+    { src: '/images/photo11.jpg', caption: '最性感的一张', emoji: '💖' },
   ],
 
   // 深情寄语（写给她的一段话）
@@ -112,21 +78,21 @@ export const config = {
   gifts: [
     {
       id: 1,
-      name: '惊喜礼物一',
-      desc: '🎁 这是我为你精心准备的礼物，\n需要亲自交到你手上。',
-      hint: '和甜蜜有关',
+      name: 'KT 爱神花束',
+      desc: '🌸 一束专属于你的爱神花束，\n已经悄悄准备好送到你手上了。',
+      hint: '已经送啦 💝',
     },
     {
       id: 2,
-      name: '惊喜礼物二',
-      desc: '🎁 这个礼物包含了我对你的一个小小心意，\n希望你喜欢。',
-      hint: '和美好有关',
+      name: '刮刮乐',
+      desc: '🎟️ 一张幸运刮刮乐，\n我们现在就去买，一起刮！',
+      hint: '现在就去买 🛒',
     },
     {
       id: 3,
-      name: '惊喜礼物三',
-      desc: '🎁 这是我觉得你一定会喜欢的东西，\n期待看到你拆开时的表情。',
-      hint: '和快乐有关',
+      name: '多多的新衣服',
+      desc: '👗 送给你一件新衣服，\nbb 自己去挑，喜欢什么选什么！',
+      hint: 'bb 自己挑选 🛍️',
     },
   ],
 
@@ -135,6 +101,5 @@ export const config = {
 }
 
 export type TimelineItem = typeof config.timeline[0]
-export type PlaceItem = typeof config.places[0]
 export type PhotoItem = typeof config.photos[0]
 export type GiftItem = typeof config.gifts[0]

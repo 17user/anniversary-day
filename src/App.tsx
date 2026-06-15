@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import Hero from './components/Hero'
 import MusicPlayer from './components/MusicPlayer'
 import Timeline from './components/Timeline'
-import PlaceCards from './components/PlaceCards'
 import PhotoWall from './components/PhotoWall'
 import LoveNote from './components/LoveNote'
 import GiftBox from './components/GiftBox'
@@ -37,7 +36,6 @@ export default function App() {
 
       {/* 我们的故事 */}
       <Timeline />
-      <PlaceCards />
       <PhotoWall />
       <LoveNote />
 
