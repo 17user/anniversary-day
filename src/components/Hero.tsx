@@ -164,7 +164,7 @@ export default function Hero() {
         <div
           className={`text-sm sm:text-base font-sans text-muted tracking-[0.2em] transition-all duration-1000 delay-200 ${countVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
-          2026.06.15 · 我们的两周年
+          2026.06.15 &nbsp;我们的两周年
         </div>
 
         {/* 专属情话 */}
