@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { config } from '../data/content'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const resolveImg = (src: string) => src ? `${base}${src}` : src
+
 type TimelineItem = typeof config.timeline[0]
 
 const AUTO_PLAY_INTERVAL = 3000 // 3秒自动切换
@@ -74,7 +77,7 @@ function TimelineModal({
               style={{ minHeight: '220px' }}>
               {photos[current].src ? (
                 <img
-                  src={photos[current].src}
+                  src={resolveImg(photos[current].src)}
                   alt={photos[current].caption}
                   className="w-full object-cover max-h-72"
                 />

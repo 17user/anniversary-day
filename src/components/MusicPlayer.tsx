@@ -10,7 +10,8 @@ export default function MusicPlayer() {
     if (!audio) return
     audio.volume = 0.4  // 背景音乐音量，0.0~1.0，0.4 适合作为背景
     // 检查音乐文件是否存在
-    fetch('/music/bgm.mp3', { method: 'HEAD' })
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+    fetch(`${base}/music/bgm.mp3`, { method: 'HEAD' })
       .then(r => { if (r.ok) setHasAudio(true) })
       .catch(() => {})
   }, [])
@@ -28,7 +29,7 @@ export default function MusicPlayer() {
 
   return (
     <>
-      <audio ref={audioRef} src="/music/bgm.mp3" loop />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/music/bgm.mp3`} loop />
       <button
         onClick={toggle}
         title={hasAudio ? (playing ? '暂停音乐' : '播放音乐') : '请将 bgm.mp3 放入 public/music/ 目录'}

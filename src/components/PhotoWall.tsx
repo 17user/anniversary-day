@@ -1,5 +1,8 @@
 import { config } from '../data/content'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const resolveImg = (src: string) => src ? `${base}${src}` : src
+
 export default function PhotoWall() {
   const photos = config.photos
 
@@ -27,7 +30,7 @@ export default function PhotoWall() {
             >
               {photo.src ? (
                 <img
-                  src={photo.src}
+                  src={resolveImg(photo.src)}
                   alt={photo.caption}
                   loading="lazy"
                   className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
