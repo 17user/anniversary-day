@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { config } from '../data/content'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 // 计算距纪念日还有多少天
 function getDaysUntil(dateStr: string): number {
   const target = new Date(dateStr)
@@ -98,7 +100,7 @@ export default function Hero() {
     >
       {/* 背景图 */}
       <img
-        src="/images/hero-bg.png"
+        src={`${base}/images/hero-bg.png`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
         aria-hidden="true"
@@ -164,7 +166,7 @@ export default function Hero() {
         <div
           className={`text-sm sm:text-base font-sans text-muted tracking-[0.2em] transition-all duration-1000 delay-200 ${countVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
-          2026.06.15 &nbsp;我们的两周年
+          2026.06.15　我们的两周年
         </div>
 
         {/* 专属情话 */}
